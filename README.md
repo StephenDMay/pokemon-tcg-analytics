@@ -1,6 +1,6 @@
 # Pokemon TCG Analytics
 
-A data analytics platform for the Pokemon Trading Card Game, providing meta game analysis, deck optimization, and trend predictions.
+A data analytics platform for the Pokemon Trading Card Game, providing meta game analysis, deck optimization, and trend predictions to compensate the game in real life or on Pokemon TCG Online.
 
 ## Features
 
