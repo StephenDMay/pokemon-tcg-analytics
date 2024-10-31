@@ -1,8 +1,51 @@
-# Like .gitignore in any .NET project
-# Specifies which files Git should ignore
-venv/                   # Like packages/
-__pycache__/           # Like bin/
-*.pyc                  # Like .dll files
-.pytest_cache/         # Like TestResults
-.coverage              # Like coverage reports
-.env                   # Like secrets.json
+# Python build artifacts
+*.py[cod]
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+bin/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# Virtual environments
+venv/
+env/
+.env/
+.venv/
+ENV/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+.pytest_cache/
+
+# Environment variables and secrets
+.env
+*.env
+.env.local
+.env.*.local
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/

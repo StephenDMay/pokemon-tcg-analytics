@@ -1,16 +1,41 @@
 {
-    "python.defaultInterpreterPath": "${workspaceFolder}/venv/Scripts/python.exe",
-    "python.terminal.activateEnvironment": true,
-    "python.terminal.activateEnvInCurrentTerminal": true,
-    "python.analysis.typeCheckingMode": "basic",
-    "python.formatting.provider": "black",
-    "python.linting.enabled": true,
-    "python.linting.flake8Enabled": true,
-    "editor.formatOnSave": true,
-    "editor.rulers": [88],
-    "files.exclude": {
-        "**/__pycache__": true,
-        "**/.pytest_cache": true,
-        "**/*.pyc": true
+    "settings": {
+        // Python settings
+        "python.defaultInterpreterPath": "${workspaceFolder}/venv/Scripts/python.exe",
+        "python.analysis.extraPaths": [
+            "${workspaceFolder}"
+        ],
+        // Environment settings
+        "terminal.integrated.env.windows": {
+            "PYTHONPATH": "${workspaceFolder}"
+        },
+        // Editor settings for Python
+        "[python]": {
+            "editor.formatOnSave": true,
+            "editor.formatOnType": true,
+            "editor.rulers": [
+                88
+            ], // For black formatter
+            "editor.codeActionsOnSave": {
+                "source.organizeImports": true
+            }
+        },
+        // Linting settings
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": true,
+        // Testing settings
+        "python.testing.pytestEnabled": true,
+        "python.testing.unittestEnabled": false,
+        "python.testing.nosetestsEnabled": false,
+        // Debugging settings
+        "python.debugging.justMyCode": false
     },
+    "extensions": {
+        "recommendations": [
+            "ms-python.python",
+            "ms-python.vscode-pylance",
+            "ms-python.black-formatter",
+            "ms-python.pylint"
+        ]
+    }
 }
