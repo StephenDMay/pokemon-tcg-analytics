@@ -1,0 +1,8 @@
+# Like .gitignore in any .NET project
+# Specifies which files Git should ignore
+venv/                   # Like packages/
+__pycache__/           # Like bin/
+*.pyc                  # Like .dll files
+.pytest_cache/         # Like TestResults
+.coverage              # Like coverage reports
+.env                   # Like secrets.json
