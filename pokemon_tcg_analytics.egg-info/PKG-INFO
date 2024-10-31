@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: pokemon-tcg-analytics
+Version: 0.1.0
+Summary: Pokemon TCG Analytics Tool
+Author-email: Stephen May <stephendouglasm@gmail.com>
+Requires-Python: >=3.8
