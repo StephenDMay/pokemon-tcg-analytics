@@ -33,7 +33,7 @@ class CardSet(BaseModel):
     series: str
     printedTotal: int
     total: int
-    legalities: Dict[str, Optional[str]]  # Changed to allow None values
+    legalities: Dict[str, Optional[str]]  
     ptcgoCode: Optional[str] = None
     releaseDate: str
     updatedAt: str
@@ -45,7 +45,7 @@ class CardImages(BaseModel):
 class TCGPlayer(BaseModel):
     url: str
     updatedAt: str
-    prices: Dict[str, Optional[Price]] = Field(default_factory=dict)  # Changed to handle null prices
+    prices: Dict[str, Optional[Price]] = Field(default_factory=dict)  
 
 class Card(BaseModel):
     # Required fields
